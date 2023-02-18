@@ -1,10 +1,12 @@
 /* Reguły CSS */
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap" rel="stylesheet');
 
 * {
 	box-sizing: border-box;
 	/*poczytac jako homework */
+
 }
 
 /* Body */
@@ -63,12 +65,13 @@ nav ul li a {
 	font-size: 18px;
 	display: block;
 	text-decoration: none;
-	transition: 0.5s;
+	transition: 1s;
 }
 
 nav ul li a:hover {
-	background-color: rgb(56, 213, 24);
-	color: rgb(255, 255, 255, 1);
+	background-color: rgba(239, 243, 12, 0.726);
+	color: rgb(243, 9, 9);
+	transform: scale(120%);
 }
 
 /* Slider */
@@ -81,6 +84,7 @@ nav ul li a:hover {
 /* Main */
 main {
 	display: flex;
+
 }
 
 /* Article */
@@ -107,6 +111,7 @@ aside {
 .author-name {
 	font-weight: bold;
 }
+
 .widget {
 	margin-bottom: 50px;
 }
@@ -136,15 +141,33 @@ aside {
 
 footer {
 	background-color: lightgray;
-	border-top: 1px solid black;
-	text-align: center;
-	padding: 25px 0;
+  border-top: 1px solid black;
+  text-align: center;
+  padding: 25px 0;
 }
 
 footer p {
-	margin: 0;
-	text-shadow: 2px 2px darkgray;
+  margin: 0;
+  text-shadow: 2px 2px darkgray;
 }
+
+p {
+  text-align: justify;
+}
+
+h1 {
+  font-size: 35px;
+  text-decoration: underline;
+  font-family: "Labrada", serif;
+}
+
+h3 {
+  font-family: "Labrada", serif;
+  font-size: 24px;
+}
+
+
+
 @media (min-width: 376px) {
 	body {
 		background-color: rgb(156, 255, 80);
@@ -153,5 +176,5 @@ footer p {
 @media (min-width: 768px) {
 	body {
 		background-color: wheat;
-	}
-}
+	} 
+
