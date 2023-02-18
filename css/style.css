@@ -4,44 +4,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap" rel="stylesheet');
 
 * {
-  box-sizing: border-box;
-  /*poczytac jako homework */
+	box-sizing: border-box;
+	/*poczytac jako homework */
+
 }
 
 /* Body */
 body {
-  margin: 0;
-  font-size: 16px;
-  font-family: "Lato", sans-serif;
+	margin: 0;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
 }
-
+.img {
+	transform: scale(2);
+	margin-left: 15px;
+}
 img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 15px;
+	max-width: 100%;
+	height: auto;
 }
 
 /* Container */
 #container {
-  max-width: 1000px;
-  border: 2px solid black;
-  margin: 0 auto;
-  border-radius: 5px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.877);
+	max-width: 1000px;
+	border: 2px solid black;
+	margin: 0 auto;
+	border-radius: 5px;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.877);
 }
 
 /* Header */
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px;
 }
 
 /* Brand */
 .brand a,
 .brand img {
-  display: block;
+	display: block;
 }
 
 /* Menu */
@@ -69,18 +72,19 @@ nav ul li a:hover {
 	background-color: rgba(239, 243, 12, 0.726);
 	color: rgb(243, 9, 9);
 	transform: scale(120%);
-    
-
 }
 
 /* Slider */
 .slider img {
 	display: block;
+	width: 100vw;
+	height: 300px;
 }
 
 /* Main */
 main {
-  display: flex;
+	display: flex;
+
 }
 
 /* Article */
@@ -92,6 +96,10 @@ article {
 article img {
 	padding-right: 30px;
 }
+.form {
+	width: 30px;
+	font-weight: bold;
+}
 
 /* Aside */
 aside {
@@ -99,6 +107,9 @@ aside {
 	padding: 20px;
 	background-color: lightgray;
 	border-left: 1px dashed black;
+}
+.author-name {
+	font-weight: bold;
 }
 
 .widget {
@@ -123,11 +134,13 @@ aside {
 .links ul li {
 	margin-bottom: 10px;
 }
-
+.links {
+	text-decoration: none;
+}
 /* Footer */
 
 footer {
-  background-color: lightgray;
+	background-color: lightgray;
   border-top: 1px solid black;
   text-align: center;
   padding: 25px 0;
@@ -152,3 +165,16 @@ h3 {
   font-family: "Labrada", serif;
   font-size: 24px;
 }
+
+
+
+@media (min-width: 376px) {
+	body {
+		background-color: rgb(156, 255, 80);
+	}
+}
+@media (min-width: 768px) {
+	body {
+		background-color: wheat;
+	} 
+
